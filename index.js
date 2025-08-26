@@ -3,7 +3,7 @@ const req = new XMLHttpRequest();
 req.onload = function () {
   console.log("Loaded!");
   const data = JSON.parse(this.responseText);
-  console.log(data);
+  console.log(data.result.properties.name, data.result.properties.height);
 };
 
 req.oneerror = function () {
