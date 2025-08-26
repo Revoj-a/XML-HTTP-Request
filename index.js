@@ -2,7 +2,7 @@ const req = new XMLHttpRequest();
 
 req.onload = function () {
   console.log("Loaded!");
-  console.log(this.responseText);
+  JSON.parse(this.responseText);
 };
 
 req.oneerror = function () {
